@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@null">
+
+    <ListView
+        android:id="@+id/messagesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:layout_above="@+id/container"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="alwaysScroll" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#a0c1d7ef"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/messageEdit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:hint="Type message"
+            android:textColor="#fc707070"
+            android:textColorHighlight="@android:color/holo_blue_bright"
+            android:textColorHint="#fc9f9f9f"
+            android:layout_margin="10dp"/>
+
+        <ImageButton
+            android:id="@+id/chatSendButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/ic_send_black_24dp" />
+    </LinearLayout>
+</RelativeLayout>

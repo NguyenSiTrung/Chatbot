@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Chat Bot 2.3</string>
+    <string name="NAME_SPACE">http://services</string>
+    <string name="URL">http://107.113.184.128:9080/HelloServices/services/SayHello?wsdl</string>
+    <string name="URL_FB">http://107.113.184.128:9080/HelloServices/services/FeedBackServices?wsdl</string>
+    <string name="URL_TEACH">http://107.113.184.128:9080/HelloServices/services/TeachServices?wsdl</string>
+</resources>

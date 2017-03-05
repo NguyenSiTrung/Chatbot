@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.FeedBacksActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#a3f5f1f1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="request"
+        android:id="@+id/lbRequest"
+        android:layout_gravity="right"
+        android:background="@drawable/in_message_bg"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="response"
+        android:id="@+id/lbResponse"
+        android:layout_gravity="left"
+        android:background="@drawable/out_message_bg"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rất tốt"
+            android:id="@+id/rbVeryGood"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tốt"
+            android:id="@+id/rbGood"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Không tốt"
+            android:id="@+id/rbBad"/>
+    </RadioGroup>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:hint="Nhập câu trả lời mong muốn"
+        android:id="@+id/edtFeedback"
+        android:background="@drawable/dotted_border"
+        android:gravity="center"
+        android:textColor="#edd9004c"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Phản hồi"
+            android:id="@+id/btnFeedback"
+            android:background="@drawable/dotted_border"
+            android:backgroundTint="#f00ac407"
+            android:textColor="#fdfdfd"
+            android:layout_margin="5dp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hủy"
+            android:id="@+id/btnCancle"
+            android:background="@drawable/dotted_border"
+            android:backgroundTint="#f0c40730"
+            android:textColor="#fdfdfd"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

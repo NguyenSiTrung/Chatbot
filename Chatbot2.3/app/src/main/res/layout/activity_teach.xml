@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:id="@+id/edtRequest"
+        android:layout_gravity="right"
+        android:background="@drawable/in_message_bg"
+        android:padding="5dp"
+        android:layout_marginLeft="50dp"
+        android:hint="Nhập câu hỏi của bạn"
+        android:gravity="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:id="@+id/edtResponse"
+        android:layout_gravity="left"
+        android:background="@drawable/out_message_bg"
+        android:padding="5dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Nhập câu trả lời mong muốn"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Dạy dỗ"
+            android:background="@drawable/dotted_border"
+            android:backgroundTint="@color/brand_red"
+            android:textColor="#fdf4f5f4"
+            android:id="@+id/btnTeach"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Hủy"
+            android:background="@drawable/dotted_border"
+            android:backgroundTint="#fe8ee933"
+            android:textColor="#f2e40829"
+            android:id="@+id/btnCancle"/>
+    </LinearLayout>
+</LinearLayout>
